@@ -30,6 +30,6 @@ To get these events into your project on Maven.
 <dependency>
   <groupId>com.github.JoKrus</groupId>
   <artifactId>dj-battle-plugin-api</artifactId>
-  <version>Tag</version>
+  <version>v0.1.1</version>
 </dependency>
 ```
