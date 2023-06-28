@@ -46,7 +46,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN_WORKFLOW }}
         with:
           tag_name: v${{ steps.version_stuff.outputs.VERSION_CURRENT }}
           release_name: Release ${{ steps.version_stuff.outputs.VERSION_CURRENT }}
