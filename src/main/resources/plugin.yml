@@ -1,0 +1,5 @@
+name: BattlePluginEventApi
+version: '${project.version}'
+main: net.jcom.minecraft.battleplugineventapi.BattlePluginEventApi
+api-version: '1.20'
+load: STARTUP
