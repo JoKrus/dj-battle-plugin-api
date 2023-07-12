@@ -6,7 +6,30 @@ import org.bukkit.event.HandlerList;
 public class BattleStoppedEvent extends Event {
     private static final HandlerList HANDLERS_LIST = new HandlerList();
 
+    private final String winner;
+
     public BattleStoppedEvent() {
+        winner = null;
+    }
+
+    public BattleStoppedEvent(String winner) {
+        this.winner = winner;
+    }
+
+    /**
+     * @return true if battle had a winner
+     */
+    public boolean hasWinner() {
+        return winner != null;
+    }
+
+    /**
+     * Returns the Teamname of the winners or the playeName if the winner was not part of a team.
+     *
+     * @return Teamname that won the battle
+     */
+    public String getWinnerTeam() {
+        return winner;
     }
 
     @Override
