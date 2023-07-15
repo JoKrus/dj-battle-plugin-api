@@ -7,13 +7,16 @@ public class BattleStoppedEvent extends Event {
     private static final HandlerList HANDLERS_LIST = new HandlerList();
 
     private final String winner;
+    private final boolean battleCancelled;
 
     public BattleStoppedEvent() {
         winner = null;
+        battleCancelled = false;
     }
 
-    public BattleStoppedEvent(String winner) {
+    public BattleStoppedEvent(String winner, boolean battleCancelled) {
         this.winner = winner;
+        this.battleCancelled = battleCancelled;
     }
 
     /**
@@ -30,6 +33,15 @@ public class BattleStoppedEvent extends Event {
      */
     public String getWinnerTeam() {
         return winner;
+    }
+
+    /**
+     * If this battle is cancelled, all data gathered should be removed
+     *
+     * @return battleCancelled
+     */
+    public boolean isBattleCancelled() {
+        return battleCancelled;
     }
 
     @Override
