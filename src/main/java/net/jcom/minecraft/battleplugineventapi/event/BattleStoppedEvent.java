@@ -24,9 +24,9 @@ public class BattleStoppedEvent extends Event {
     }
 
     /**
-     * Returns the Teamname of the winners or the playeName if the winner was not part of a team.
+     * Returns the TeamName of the winners or the playerName if the winner was not part of a team.
      *
-     * @return Teamname that won the battle
+     * @return TeamName that won the battle
      */
     public String getWinnerTeam() {
         return winner;
