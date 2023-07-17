@@ -33,7 +33,7 @@ To get these events into your project on Maven.
 <dependency>
     <groupId>com.github.JoKrus</groupId>
     <artifactId>dj-battle-plugin-api</artifactId>
-    <version>v1.1.1</version>
+    <version>v1.1.2</version>
     <scope>provided</scope>
 </dependency>
 ```
