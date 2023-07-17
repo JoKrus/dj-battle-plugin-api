@@ -3,7 +3,10 @@
 ### Usage
 
 The BattlePlugin provides 2 events that you can listen to.
-```BattleStartedEvent``` and ```BattleStoppedEvent```.
+
+```BattleStartedEvent``` and ```BattleStoppedEvent```
+
+They provide information about the Battle at start and if it was cancelled at stop.
 
 You can listen to them like any other Bukkit event.
 
@@ -16,10 +19,10 @@ To get these events into your project on Maven.
 ```xml
 
 <repositories>
-  <repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-  </repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
 </repositories>
 ```
 
@@ -28,8 +31,9 @@ To get these events into your project on Maven.
 ```xml
 
 <dependency>
-  <groupId>com.github.JoKrus</groupId>
+    <groupId>com.github.JoKrus</groupId>
     <artifactId>dj-battle-plugin-api</artifactId>
     <version>v1.1.1</version>
+    <scope>provided</scope>
 </dependency>
 ```
